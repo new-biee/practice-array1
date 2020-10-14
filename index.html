@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [-3, 5, 1, 3, 2, 10]; //khai bao array x
+    let first = 0; //khai bao bien
+    let last = x.length - 1; //khai vao bien last = lenght cua x - 1 = 5
+    while (first < last) { //vong lap while chay tu 0 den 5
+        let b = x[first];
+        x[first] = x[last];
+        x[last] = b;
+        first++;
+        last--;
+    }
+    document.write(x);
+</script>
+</body>
+</html>
